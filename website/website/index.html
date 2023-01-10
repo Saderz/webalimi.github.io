@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Wibu Cave</title>
+    <link rel="stylesheet" href="/website/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logoweb.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo1.png"></a>
+            </div>
+
+            <div class="topnav">
+                <div class="search-container">
+                    <form action="https://www.google.com/search" method="get" class="search-bar">
+                        <input type="text" placeholder="Search.." name="search" name="q">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Anime</a></li>
+                    <li><a href="">Manga</a></li>
+                    <li><a href="">Light Novel</a>
+                        <!-- <div class="megamenu">
+                            <ul class="single-mega cn-col-4">
+                                <li><a href="#">- Action</a></li>
+                                <li><a href="#">- Adapted to Anime</a></li>
+                                <li><a href="#">- Adapted to Drama CD</a></li>
+                                <li><a href="#">- Adapted to Manga</a></li>
+                                <li><a href="#">- Adult</a></li>
+                                <li><a href="#">- Adventure</a></li>
+                                <li><a href="#">- Age Gap</a></li>
+                            </ul>
+                            <ul class="single-mega cn-col-4">
+                                <li><a href="#">- Boys Love</a></li>
+                                <li><a href="#">- Character Growth</a></li>
+                                <li><a href="#">- Chinese Novel</a></li>
+                                <li><a href="#">- Comedy</a></li>
+                                <li><a href="#">- Cooking</a></li>
+                                <li><a href="#">- Different Social Status</a></li>
+                                <li><a href="#">- Drama</a></li>
+                            </ul>
+                            <ul class="single-mega cn-col-4">
+                                <li><a href="#">- Ecchi</a></li>
+                                <li><a href="#">- Fantasy</a></li>
+                                <li><a href="#">- Game</a></li>
+                                <li><a href="#">- Harem</a></li>
+                                <li><a href="#">- Historical</a></li>
+                                <li><a href="#">- Horror</a></li>
+                                <li><a href="#">- Incest</a></li>
+                            </ul>
+                            <ul class="single-mega cn-col-4">
+                                <li><a href="#">- Isekai</a></li>
+                                <li><a href="#">- Josei</a></li>
+                                <li><a href="#">- Magic</a></li>
+                                <li><a href="#">- One shot</a></li>
+                                <li><a href="#">- Mecha</a></li>
+                                <li><a href="#">- Shounen</a></li>
+                                <li><a href="#">- Shoujo</a></li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li><a href="">Review</a></li>
+                    <button onclick="Dark_mode()" id="btn_mode"><i class="fa-solid fa-moon"></i></button>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- <h1>Viết gì ở đây</h1>
+                <p>Viết gì ở đây</p> -->
+                <div class="slide first">
+                    <img src="https://cdn.discordapp.com/attachments/1025052058635731015/1048953035491131432/unknown.png"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.discordapp.com/attachments/1025052058635731015/1048953093938753606/Nguoi_tuyet__10.jpg"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.discordapp.com/attachments/1025052058635731015/1048953504254935140/Nguoi_tuyet__13.jpg"
+                        alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.discordapp.com/attachments/1025052058635731015/1048953662707355749/Nguoi_tuyet__3.jpg"
+                        alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <a href="#first" class="hero-btn">Xem thêm</a>
+        </div>
+    </section>
+    <div id="snow" count="100"></div>
+    <section class="course" id="first">
+        <h1>Anime</h1>
+        <div class="row">
+            <div class="course-col">
+                <img src="/website/images/btr.jpg" alt="">
+                <div class="blog-text">
+                    <span>4 Dec 2022 </span>
+                    <a href="" class="blog-title">Top anime tuần 8 (Mùa thu - 2022)</a>
+                    <p>Bocchi the Rock vẫn tiếp tục thống trị bảng xếp hạng!</p>
+                    <a href="">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="course-col">
+                <img src="/website/images/pv-liar.png"
+                    alt="">
+                <div class="blog-text">
+                    <span>18 Nov 2022</span>
+                    <a href="tin-tuc-1.html" class="blog-title">PV Liar Liar</a>
+                    <p>Anime sẽ được ra mắt năm 2023!</p>
+                    <a href="tin-tuc-1.html">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="course-col">
+                <img src="/website/images/opm.jpg" alt="">
+                <div class="blog-text">
+                    <span>8 Dec 2022</span>
+                    <a href="" class="blog-title">MAPPA sẽ là studio sản xuất của One Punch Man SS3</a>
+                    <p>Thánh Saitama quay trở lại!</p>
+                    <a href="">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="blog-a">
+                <a href="anime.html" class="btn-blog">Xem thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1 style="text-align: left">Manga</h1>
+        <div class="row">
+            <div class="campus-col">
+                <img src="/website/images/chainsaw.jpg">
+                <div class="layer">
+                    <div class="blog-text">
+                        <!-- <span>8 Dec 2022</span> -->
+                        <a href="" class="blog-title">Chainsaw Man</a>
+                        <p>Bộ manga đang tung hoành mấy tháng nay!</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="/website/images/kaguya.png">
+                <div class="layer">
+                    <div class="blog-text">
+                        <!-- <span>8 Dec 2022</span> -->
+                        <a href="tin-tuc-2.html" class="blog-title">Kaguya-sama: Love is War</a>
+                        <p>Bộ manga đã end và để lại nhiều cảm xúc trong lòng độc giả!</p>
+                        <a href="tin-tuc-2.html">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="/website/images/onepiece.jpg">
+                <div class="layer">
+                    <div class="blog-text">
+                        <!-- <span>8 Dec 2022</span> -->
+                        <a href="" class="blog-title">One piece</a>
+                        <p>Bộ manga có tuổi đời dài và luôn nằm top trong rất nhiều năm!</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="course">
+        <h1>Light Novel</h1>
+
+        <div class="row">
+            <div class="course-col">
+                <img src="https://scontent.fhan12-1.fna.fbcdn.net/v/t39.30808-6/318201442_827674941932347_5557422585412058135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=Y1oKf6vdumsAX8LY_ez&_nc_ht=scontent.fhan12-1.fna&oh=00_AfAyeZEIwyk7XOEyaLxnezaKzubp_7AaJLasCiwjhJcghw&oe=6399C9C8"
+                    alt="">
+                <div class="blog-text">
+                    <span>9 Dec 2022 </span>
+                    <a href="" class="blog-title">Ảnh mừng tập 7 của isekai lợn</a>
+                    <p>Isekai lợn vừa được xuất bản trong ngày cùng với công bố mới cho anime!</p>
+                    <a href="">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="course-col">
+                <img src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/317631212_454355966883433_5987496984541622547_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0debeb&_nc_ohc=kduF4mCiB8UAX9RNKD6&_nc_ht=scontent.fhan18-1.fna&oh=00_AfAMcQHf1SDhLaxYwbgw009WTKJqrq7geoLsUgNtPeAbqA&oe=639B8884"
+                    alt="">
+                <div class="blog-text">
+                    <span>7 Dec 2022 </span>
+                    <a href="" class="blog-title">Marie If vol 1 dự kiến phát hành ngày 28/12 năm nay.</a>
+                    <p>Spin-off của Mobuseka được nhiều người ủng hộ!</p>
+                    <a href="">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="course-col">
+                <img src="https://www.animenewsnetwork.com/thumbnails/crop1200x630gK4/cms/news.6/192289/x-9.jpg" alt="">
+                <div class="blog-text">
+                    <span>4 Dec 2022 </span>
+                    <a href="tin-tuc-3.html" class="blog-title">Bảng xếp hạng Konorano 2023</a>
+                    <p>Top 10 bộ light novel hay nhất 2022!</p>
+                    <a href="tin-tuc-3.html">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row-2">
+                <div class="footer-col">
+                    <h4>team</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">how to use</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">update</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>contact</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <p>&copy; Copyright 2022 <br> Hoàng Minh, Tiến Đạt</p>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <button class="nut-mo-chatbox"><i class="fa-brands fa-facebook-messenger fa-2xl"></i></button>
+    <div class="Chatbox" id="myForm">
+        <div class="chat-box">
+            <div class="client">
+                <img src="/website/images/avt.png" alt="logo">
+                <div class="client-info">
+                    <h2>Mèo Đen</h2>
+                    <p>Online 🟢</p>
+                </div>
+            </div>
+            <div class="chats">
+                <div class="client-chat">Hi!</div>
+                <div class="my-chat">Hi~</div>
+                <div class="client-chat">Mình có thể giúp gì cho bạn?</div>
+                <div class="my-chat">Mình cần thông tin về 1 bộ anime</div>
+                <div class="client-chat">Bạn cần bộ nào ạ?</div>
+                <div class="my-chat">Boku No...</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Điền tin nhắn">
+                <button class="send-btn"><img src="/website/images/send-message.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="app-cover">
+        <div id="bg-artwork"></div>
+        <div id="bg-layer"></div>
+        <div id="player">
+          <div id="player-track">
+            <div id="album-name"></div>
+            <div id="track-name"></div>
+            <div id="track-time">
+              <div id="current-time"></div>
+              <div id="track-length"></div>
+            </div>
+            <div id="s-area">
+              <div id="ins-time"></div>
+              <div id="s-hover"></div>
+              <div id="seek-bar"></div>
+            </div>
+          </div>
+          <div id="player-content">
+            <div id="album-art">
+              <img src="https://i1.sndcdn.com/artworks-000467636769-ixrxfl-t500x500.jpg" class="active" id="_1">
+              <img src="https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/7e/42/01/7e420179-b8aa-a214-7de8-1962e8aa365d/artwork.jpg/400x400cc.jpg" id="_2">
+              <img src="https://i1.sndcdn.com/artworks-KexXRJGwHVRaKb6v-2ZSH7A-t500x500.jpg" id="_3">
+              <img src="https://i1.sndcdn.com/artworks-kmsbAv7VJqhOIbbn-8csNdg-t500x500.jpg" id="_4">
+              <img src="https://avatar-ex-swe.nixcdn.com/song/2018/01/11/a/6/9/9/1515644505022_640.jpg" id="_5">
+              <div id="buffer-box">Buffering ...</div>
+            </div>
+            <div id="player-controls">
+              <div class="control">
+                <div class="button" id="play-previous">
+                  <i class="fas fa-backward"></i>
+                </div>
+              </div>
+              <div class="control">
+                <div class="button" id="play-pause-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="control">
+                <div class="button" id="play-next">
+                  <i class="fas fa-forward"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="/website/js/script.js"></script>
+    <script src="/website/js/snow.js"></script>
+
+</body>
+
+</html>

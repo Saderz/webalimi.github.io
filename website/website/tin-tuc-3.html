@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Wibu Cave</title>
+    <link rel="stylesheet" href="/website/css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logoweb.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body class="tin-tuc">
+    <section class="header">
+        <nav>
+            <div id="logo">
+                <a href="index.html"><img src="images/logo1.png"></a>
+            </div>
+
+            <div class="topnav">
+                <div class="search-container">
+                    <form action="https://www.google.com/search" method="get" class="search-bar">
+                        <input type="text" placeholder="Search.." name="search" name="q">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Anime</a></li>
+                    <li><a href="">Manga</a></li>
+                    <li><a href="">Light Novel</a></li>
+                    <li><a href="">Review</a></li>
+                    <button onclick="Dark_mode()" id="btn_mode"><i class="fa-solid fa-moon"></i></button>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <div class="frame">
+        <div class="news">
+            <h1>Bảng xếp hạng "Kono Light Novel ga Sugoi" (Bunkobon) 2023</h1>
+    
+            <h2>Top 1</h2>
+            <p>Classroom of the Elite: Year 2 (Chào mừng đến lớp học đề cao thực lực) vẫn tiếp tục giữ ngôi vương của mình trong 3 năm.</p>
+    
+            <div class="article-img">
+                <img src="https://cdn-amz.woka.io/images/I/81NB1fQU0TL.jpg"
+                    alt="">
+            </div>
+    
+            <h2>Top 2</h2>
+            <p>Đứng thứ 2 đó chính là Chitose-kun Is in the Ramune Bottle (Chitose trong chai Ramune).</p>
+    
+            <div class="article-img">
+                <img src="https://cdn.novelupdates.com/images/2019/11/Chitose-kun-wa-Ramune-Bin-no-Naka.jpg">
+            </div>
+            
+            <h2>Top 3</h2>
+            <p>Watashi wa anata no Namida ni Naritai</p>
+            
+            <div class="spc-img">
+                <img src="https://cdn.hyped.jp/hype/images/light-novel/H5e-tpEzGQAp4nDj57lJL.jpeg">
+            </div>
+    
+            <h2>Top 4</h2>
+            <p>Với sự cuốn hút của Mahiru, không có gì lạ khi mà The Angel Next Door Spoils Me Rotten (Thiên sứ nhà bên) sẽ nằm trong top bảng xếp hạng.</p>
+    
+            <div class="article-img">
+                <img src="https://static.wikia.nocookie.net/otonari-no-tenshi/images/d/de/Mahiru_LN.jpg/revision/latest?cb=20210518203532">
+            </div>
+    
+            <h2>Top 5</h2>
+            <p>Sức hút của Arya Sometimes Hides Her Feelings in Russian (Arya bàn bên thỉnh thoảng lại trêu ghẹo tôi bằng tiếng Nga) </p>
+            
+            <div class="article-img">
+                <img src="https://vn-test-11.slatic.net/p/70289babd0bc60afa861c737c233d107.jpg">
+            </div>
+    
+            <h2>Top 6</h2>
+            <p>Ryuugoroshi no Brunhild</p>
+            
+            <div class="article-img">
+                <img src="https://pbs.twimg.com/media/FU0ctEBXsAAiQSD?format=jpg&name=4096x4096">
+            </div>
+    
+            <h2>Top 7</h2>
+            <p>Watashi, Ni-banme no Kanojo de Iikara</p>
+            
+            <div class="article-img">
+                <img src="https://pbs.twimg.com/media/FPHvZ4YXwAUlVvn.jpg:large">
+            </div>
+    
+            <h2>Top 8</h2>
+            <p>Spy Classroom (Lớp học điệp viên)</p>
+            
+            <div class="article-img">
+                <img src="https://img1.ak.crunchyroll.com/i/spire4/cbce8c68569630aba0aa7542e75f45691665748639_main.jpg">
+            </div>
+            
+            <h2>Top 9</h2>
+            <p>Gimai Seikatsu (Sống cùng em kế) đã ẵm trọn hạng 3 trong mục tác phẩm mới, và hạng 7 trong mục tổng kết, đánh bại cả bộ Roshidere, giờ đây nắm giữ top 9 kanorano.</p>
+            
+            <div class="article-img">
+                <img src="https://s199.imacdn.com/ta/2022/07/24/870a935e192a5f30_ba9f6b28c1a4d8f0_21412416586809204185710.jpg">
+            </div>
+    
+            <h2>Top 10</h2>
+            <p>The Detective Is Already Dead (Thám tử đã chết)</p>
+            
+            <div class="article-img">
+                <img src="https://thaihabooks.com/wp-content/uploads/2021/08/Tha%CC%81m-tu%CC%9B%CC%89-da%CC%83-che%CC%82%CC%81t-1-THU%CC%9BO%CC%9B%CC%80NG-01.jpg">
+            </div>
+        </div>
+
+        <div class="banner">
+            <h1>Các tin tức khác</h1>
+            <div class="snews">
+                <img src="https://www.seucurioso.com/wp-content/uploads/2022/07/1652362327_O-anime-Otonari-no-Tenshi-sama-confirma-sua-estreia-em-2023-1200x675.jpg"
+                    alt="">
+                <a href="#">Các tenshibu đang mong ngóng từng ngày đợi anime ra mắt</a>
+            </div>
+            <div class="snews">
+                <img src="https://animecorner.me/wp-content/uploads/2022/12/uncle-from-another-world-episode-10-7.jpg" alt="">
+                <a href="#">Ojisan trở lại cực cháy</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row-2">
+                <div class="footer-col">
+                    <h4>team</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">how to use</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">update</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>contact</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <p>&copy; Copyright 2022 <br> Hoàng Minh, Tiến Đạt</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/website/js/script.js"></script>
+</body>
+
+</html>
